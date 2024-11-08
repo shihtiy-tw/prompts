@@ -16,7 +16,7 @@ As a professional summarizer following the TLDR best practice, create a concise 
 * Rely strictly on the provided text, without including external information. Review the articles and summary for 3 times and cross reference the accuracy of the summary.
 * Explain the professional terms with clear, simple and understandable words.
 * Format the summary in paragraph form for easy understanding and clear next action.
-
+* The summary should be in tranditional Chinese
 
 Here is the document to summary:
 
@@ -34,8 +34,6 @@ Domain: {{ document.domain}}
 {% endif %}
 ===
 
-
 IMPORTANT: Write no more than THREE sentences for each point. Each sentence should be clear, detail with take away, not just general sentences. Use words sparingly and please capture the big idea. The total characters should not be over 1000 characters.
-
 
 ```
