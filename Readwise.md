@@ -12,11 +12,14 @@ As a professional summarizer following the TLDR best practice, create a concise 
 
 * Craft a summary that is detailed, thorough, in-depth, and complex, while maintaining clarity and conciseness.
 * Incorporate main ideas and essential information, eliminating extraneous language and focusing on critical aspects.
-{#- Make sure the summary stick to the content -#}
-* Rely strictly on the provided text, without including external information. Review the articles and summary for 3 times and cross reference the accuracy of the summary.
+* Rely strictly on the provided text, without including external information.
 * Explain the professional terms with clear, simple and understandable words.
 * Format the summary in paragraph form for easy understanding and clear next action.
+{#- Make sure the summary stick to the content -#}
+* Include the useful and important statistics data to understand the important take-away in the summary.
 * The summary should be in tranditional Chinese
+{#- Make sure the summary stick to the content -#}
+* Review the articles and summary for 3 times and cross reference to increase the the accuracy of the summary.
 
 Here is the document to summary:
 
