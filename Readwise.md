@@ -37,6 +37,27 @@ Domain: {{ document.domain}}
 {% endif %}
 ===
 
-IMPORTANT: Write no more than THREE sentences for each point. Each sentence should be clear, detail with take away, not just general sentences. Use words sparingly and please capture the big idea. The total characters should not be over 1000 characters.
+Write down the summary.
 
+Next, as a professional writer, write three questions capturing the essence of what this document is trying to answer.
+
+Here is the document to read:
+
+===
+Title: {{ document.title }}
+Author: {{ document.author }}
+Domain: {{ document.domain}}
+{#- The if-else logic below checks if the document is very long, long, or short in order to not exceed the GPT "prompt window". We highly recommend not changing this unless you know what you're doing. -#}
+{% if (document.content | num_tokens) > 25000 %}
+{{ document.html | central_paragraphs | join('\n\n') }}
+{% elif (document.content | num_tokens) > 2500 %}
+{{ document.content | central_sentences | join('\n\n') }}
+{% else %}
+{{ document.content }}
+{% endif %}
+===
+
+Write down the three key question and the answers to these qustions with the same guidance of the summary.
+
+IMPORTANT: Each sentence should be clear, detail with take away, not just general sentences. Use words sparingly and please capture the big idea. The total characters should not be over 1000 characters.
 ```
